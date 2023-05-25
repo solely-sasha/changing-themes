@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar li {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.navbar li:hover {
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar.light {
+  background-color: #53ebe8;
+  color: #555353;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar.dark {
+  background-color: #1a1a1a;
+  color: #53ebe8;
+}
+
+.theme-toggle {
+  margin-top: 20px;
+  background-color: #f0f0f0;
+  color: #53ebe8;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.main.light .theme-toggle {
+  background-color: #1a1a1a;
+  color: #53ebe8;
+}
+
+.main.dark .theme-toggle {
+  background-color: #f0f0f0;
+  color: #333333;
+}
+.header {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.app.dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.main {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.main.light {
+  background-color: #ffffff;
+  color: #000000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main.dark {
+  background-color: #1a1a1a;
+  color: #53ebe8;
+}
+
+.footer {
+  padding: 10px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.footer.light {
+  background-color: #f0f0f0;
+  color: #333333;
+}
+
+.footer.dark {
+  background-color: #1a1a1a;
+  color: #53ebe8;
 }
